@@ -2,12 +2,14 @@
   box-sizing: border-box;
   font-family: "Fira Sans";
   line-height: 1;
-  /* border: 1px solid black; */
+
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
-
   width: 100vw;
 }
 
@@ -16,33 +18,49 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 15% 5% 10% 5%;
+  padding: 5% 5% 0 5%;
+}
 
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+
+nav a {
+  font-size: 0.8rem;
+  font-weight: unset;
+  border: unset;
+  padding: unset;
+  text-align: left;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 700;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 header section {
   display: flex;
-  justify-content: center;
-  width: 70%;
-  height: 50%;
-  gap: 10vw;
-}
-
-header section div {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-header section div div {
-  width: 100%;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  font-weight: 900;
+  width: 70%;
+  height: 30%;
+  gap: 20%;
+  padding-bottom: 20%;
 }
 
 h1 {
@@ -55,16 +73,153 @@ h1 {
 h2 {
   width: 70%;
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h3 {
+  font-size: 1.5rem;
   width: 70%;
   text-align: right;
 }
 
 h4 {
+  font-size: 1rem;
   width: 70%;
-  font-size: 0.7rem;
+  text-align: center;
+}
+
+img {
+  border-top: 2px white solid;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.links {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links div {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+}
+
+.info {
+  border-top: black solid 5px;
+  border-bottom: black solid 5px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20% 0;
+}
+
+.info div {
+  gap: 1rem;
+}
+
+.about {
+  display: flex;
+  height: 50%;
+  padding: 5% 5% 10% 5%;
+}
+
+.about h3 {
+  text-align: left;
+}
+
+.about p {
   text-align: right;
+}
+
+.skills {
+  display: flex;
+  height: 50%;
+  padding: 5% 5% 10% 5%;
+}
+
+.skills h3 {
+  text-align: right;
+}
+
+.skills p {
+  text-align: left;
+}
+.projects {
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 10% 10% 10%;
+  gap: 1rem;
+}
+
+.projects div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*border-bottom: solid 2px white;*/
+  padding-bottom: 1rem;
+}
+
+.projects h1 {
+  font-size: 2rem;
+}
+
+.projects div h2 {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.projects div p {
+  line-height: 1.1rem;
+  padding: 0 0.5rem;
+  text-align: left;
+}
+
+.projects a {
+
+  color: white;
+  border: solid 1px white;
+  font-size: 0.8rem;
+}
+
+.projects div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  border: none;
+}
+
+
+@media (min-width: 1000px) {
+  /* Styles for screens up to 1000px wide */
+  /* Adjustments for smaller screens go here */
+  header {
+    padding: 1.5rem 5% 0 5%;
+  }
+  nav div a {
+    font-size: 1.5rem;
+    color: gray;
+  }
+
+
 }
