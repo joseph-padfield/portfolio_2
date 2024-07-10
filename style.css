@@ -345,8 +345,12 @@ p.project_description {
 
   .projects {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
+  .subsection_container {
+    width: 600px;
+  }
 
 }
