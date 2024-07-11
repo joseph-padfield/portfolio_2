@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'NeueMontrealBook';
-  src: url('PPNeueMontreal-Book.otf') format('opentype');
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'NeueMontrealBook';
+    src: url('PPNeueMontreal-Book.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueMontrealBold';
-  src: url('PPNeueMontreal-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'NeueMontrealBold';
+    src: url('PPNeueMontreal-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueMontrealThin';
-  src: url('PPNeueMontreal-Thin.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'NeueMontrealThin';
+    src: url('PPNeueMontreal-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-  @font-face {
+@font-face {
     font-family: 'NeueMontrealMedium';
     src: url('PPNeueMontreal-Medium.otf') format('opentype');
     font-weight: normal;
@@ -27,530 +27,513 @@
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "NeueMontrealBook";
-  line-height: 1.5rem;
-  letter-spacing: 2px;
-
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
-  width: 100vw;
+    font-family: "NeueMontrealBook", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    width: 100vw;
 }
 
 header {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  gap: 1rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
 }
 
 nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*margin-bottom: 5%;*/
-  border-bottom: black solid 1px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black solid 1px;
 }
 
 a {
-  font-family: NeueMontrealBold;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-weight: 700;
-  border: solid 2px black;
-  /*border-radius: 5px;*/
-  padding: 5px;
-  text-decoration: none;
-  color: black;
-  text-align: center;
+    font-family: NeueMontrealBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 700;
+    border: solid 2px black;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 nav div {
-  display: flex;
+    display: flex;
 }
 
 nav div a {
-  font-family: NeueMontrealBold;;
-  font-size: 0.7rem;
-  font-weight: unset;
-  border: unset;
-  padding: 0.5rem;
-  text-align: left;
+    font-family: NeueMontrealBold;;
+    font-size: 0.7rem;
+    font-weight: unset;
+    border: unset;
+    padding: 0.5rem;
+    text-align: left;
 }
 
 header section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  width: 70%;
-  /*height: 30%;*/
-  gap: 20%;
-  /*padding-bottom: 20%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 70%;
+    gap: 20%;
 }
-
 
 .bx {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
-
 .hero {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 h1 {
-  font-weight: 900;
-  font-size: 2rem;
-  text-align: left;
-  padding-right: 1rem;
-  line-height: 3rem;
-
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: left;
+    padding-right: 1rem;
+    line-height: 3rem;
 }
 
 .subheading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  border-left: black solid 3px;
-  padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-left: black solid 3px;
+    padding-left: 1rem;
 }
 
-
-
 h2 {
-  font-family: NeueMontrealMedium;
-  width: 100%;
-  text-align: left;
-  font-size: 1.2rem;
-  line-height: 3rem;
+    font-family: NeueMontrealMedium;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 3rem;
 }
 
 h3 {
-  font-family: NeueMontrealBold;
-  font-size: 1.3rem;
-  width: 100%;
-  text-align: left;
-  line-height: 3rem;
+    font-family: NeueMontrealBold;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+    line-height: 3rem;
 }
 
 h4 {
-  font-size: 1rem;
-  width: 70%;
-  text-align: center;
-  display: none;
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+    display: none;
 }
 
 img {
-  border-top: 2px white solid;
-  padding-top: 1rem;
-  width: 100%;
+    border-top: 2px white solid;
+    padding-top: 1rem;
+    width: 100%;
 }
 
 p {
-  /*letter-spacing: 2px;*/
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
 }
 
 .links {
-  width: 100%;
-  padding: 0 2rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 2rem;
-  align-items: center;
-  /*margin-bottom: 10%;*/
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
 }
 
 .links div {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .links div a {
-  font-size: 0.7rem;
-  width: 30%;
-  padding: 5px 15px;
-  text-align: center;
+    font-size: 0.7rem;
+    width: 30%;
+    padding: 5px 15px;
+    text-align: center;
 }
+
 .info {
-  margin-top: 10px;
-  border-top: black solid 5px;
-  border-bottom: black solid 5px;
-  /*height: 100vh;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 10%;
-  min-height: 620px;
+    margin-top: 10px;
+    border-top: black solid 5px;
+    border-bottom: black solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10%;
+    min-height: 620px;
 }
 
 .info div {
-  gap: 1rem;
-
+    gap: 1rem;
 }
 
 .about {
-  display: flex;
-  /*height: 50%;*/
-  padding: 5% 5% 10% 5%;
-  margin-top: 3rem;
-
+    display: flex;
+    padding: 5% 5% 10% 5%;
+    margin-top: 3rem;
 }
 
 .about h3 {
-  text-align: left;
-  border-left: black solid 2px;
-  padding-left: 1rem;
+    text-align: left;
+    border-left: black solid 2px;
+    padding-left: 1rem;
 }
 
 .about p {
-  text-align: left;
-  font-size: 0.8rem;
+    text-align: left;
+    font-size: 0.8rem;
 }
 
 .skills {
-  display: flex;
-  /*height: 50%;*/
-  padding: 5% 5% 10% 5%;
+    display: flex;
+    padding: 5% 5% 10% 5%;
 }
 
 .skills h3 {
-  text-align: right;
-  border-right: black solid 2px;
-  padding-right: 1rem;
+    text-align: right;
+    border-right: black solid 2px;
+    padding-right: 1rem;
 }
 
 .skills p {
-  text-align: left;
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-  word-spacing: 3px;
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    word-spacing: 3px;
 }
 
 span {
-  font-family: NeueMontrealBold; font-size: 1rem;
+    font-family: NeueMontrealBold;
+    font-size: 1rem;
 }
+
 .page_2_links {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .page_2_links a {
-  font-size: 0.7rem;
-  width: 30%;
-  padding: 5px 15px;
-  text-align: center;
-  min-width: 95px;
+    font-size: 0.7rem;
+    width: 30%;
+    padding: 5px 15px;
+    text-align: center;
+    min-width: 95px;
 }
 
 .projects {
-  width: 100%;
-  margin: 1px;
-  padding: 5% 10% 20% 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+    width: 100%;
+    margin: 1px;
+    padding: 5% 10% 20% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .projects a {
-  width: 100%;
-  display: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  font-weight: unset;
-  border: unset;
-  padding: 4rem 0;
-  background-size: cover;
-  margin: 0.5rem;
-  /*border: 2px solid #ffffff;*/
-  /*box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 3px 3px, rgba(0, 0, 0, 0.1) -5px -5px 3px 3px, rgba(0, 0, 0, 0.1) -5px 5px 3px 3px, rgba(0, 0, 0, 0.1) 5px -5px 3px 3px;*/
+    width: 100%;
+    display: unset;
+    flex-direction: unset;
+    justify-content: unset;
+    font-weight: unset;
+    border: unset;
+    padding: 4rem 0;
+    background-size: cover;
+    margin: 0.5rem;
 }
 
 .movie_app {
-  background-image: url("movie_app.png");
+    background-image: url("movie_app.png");
 }
 
 .collector_app {
-  background-image: url("generic_pic2.webp");
+    background-image: url("generic_pic2.webp");
 }
 
 .game {
-  background-image: url("doom_2016.jpg");
+    background-image: url("doom_2016.jpg");
 }
 
 .social {
-  background-image: url("social_site.webp");
+    background-image: url("social_site.webp");
 }
 
 .subsection_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  gap: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px black solid;
 }
 
 .subsection_container div {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .subsection_container p {
-  border-left: black solid 2px;
-  padding-left: 1rem;
-
+    border-left: black solid 2px;
+    padding-left: 1rem;
 }
 
 .subsection_container h5 {
-  width: 90%;
-  font-size: 1.2rem;
-  font-family: NeueMontrealMedium;
-
+    width: 90%;
+    font-size: 1.2rem;
+    font-family: NeueMontrealMedium;
 }
 
 p.project_description {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .page_3_links {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.83);
-  width: 100vw;
-  padding: 1rem 10% 8px 10%;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.83);
+    width: 100vw;
+    padding: 1rem 10% 8px 10%;
+    gap: 1rem;
 }
 
 .page_3_links a {
-  font-size: 0.7rem;
-  width: 30%;
-  padding: 5px 15px;
-  text-align: center;
-  border: solid 2px black;
-  margin: unset;
-  min-width: 95px;
-  background-color: rgba(255, 255, 255, 0.83);
+    font-size: 0.7rem;
+    width: 30%;
+    padding: 5px 15px;
+    text-align: center;
+    border: solid 2px black;
+    margin: unset;
+    min-width: 95px;
+    background-color: rgba(255, 255, 255, 0.83);
 }
 
 @media (min-width: 850px) {
 
-  .info {
-    padding: 0 10%;
-    justify-content: center;
-  }
+    .info {
+        padding: 0 10%;
+        justify-content: center;
+    }
 
-  .info p {
-    font-size: 1.25rem;
-    letter-spacing: 2px;
-    line-height: 1.5rem;
-    font-family: NeueMontrealBook;
-  }
+    .info p {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+        font-family: NeueMontrealBook;
+    }
 
-  header {
-    padding: 1.5rem 5% 0 5%;
-    min-height: 650px;
-    margin-bottom: 10px;
-  }
+    header {
+        padding: 1.5rem 5% 0 5%;
+        min-height: 650px;
+        margin-bottom: 10px;
+    }
 
-  header h4 {
-    display: unset;
-  }
+    header h4 {
+        display: unset;
+    }
 
+    .links div a {
+        width: 11rem;
+        height: 10rem;
+        font-size: 1rem;
+        padding: 2rem;
+        text-align: center;
+        border: black 4px solid;
+    }
 
-  .links div a {
-    width: 11rem;
-    height: 10rem;
-    font-size: 1rem;
-    padding: 2rem;
-    text-align: center;
-    border: black 4px solid;
-  }
+    nav {
+        height: 2rem;
+    }
 
-  nav {
-    height: 2rem;
-  }
+    .email {
+        font-size: 0.8rem;
+    }
 
-  .email {
-    font-size: 0.8rem;
-  }
-  .git_li_links {
-    display: flex;
-  }
+    .git_li_links {
+        display: flex;
+    }
 
-  .hero {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-  }
+    .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
 
-  h1 {
-    font-size: 3rem;
-    align-items: center;
-    padding-right: 1rem;
-    line-height: 4rem;
-  }
+    h1 {
+        font-size: 3rem;
+        align-items: center;
+        padding-right: 1rem;
+        line-height: 4rem;
+    }
 
-  h2 {
-    font-size: 3rem;
-    text-align: left;
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-    border-bottom: black solid 3px;
-  }
+    h2 {
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+        border-bottom: black solid 3px;
+    }
 
-  h3 {
-    font-size: 3rem;
-    text-align: left;
-    margin-top: 1rem;
+    h3 {
+        font-size: 3rem;
+        text-align: left;
+        margin-top: 1rem;
 
-  }
-  .subheading {
-    height: 100%;
-    justify-content: center;
-    align-items: flex-start;
-  }
+    }
 
-  h4 {
-    width: 100vw;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    word-spacing: 2rem;
-    line-height: 2rem;
-  }
+    .subheading {
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-  .links {
-    flex-direction: row;
-    justify-content: center;
-  }
+    h4 {
+        width: 100vw;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        word-spacing: 2rem;
+        line-height: 2rem;
+    }
 
-  nav div a {
-    font-size: 1rem;
-    font-weight: 100;
-    display: flex;
-    align-items: center;
-    width: unset;
-    padding: 3px;
-    margin: unset;
-  }
+    .links {
+        flex-direction: row;
+        justify-content: center;
+    }
 
-  a:hover {
-    background-color: black;
-    color: white;
-    /*padding: 3px;*/
-  }
+    nav div a {
+        font-size: 1rem;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        width: unset;
+        padding: 3px;
+        margin: unset;
+    }
 
-  .about h3 {
-    padding-left: 4rem;
-    padding-top: 1rem;
-  }
+    a:hover {
+        background-color: black;
+        color: white;
+    }
 
-  .about p {
-    line-height: 2rem;
-  }
+    .about h3 {
+        padding-left: 4rem;
+        padding-top: 1rem;
+    }
 
-  .skills p {
-    word-spacing: 1.75rem;
-    line-height: 3.2rem;
-    padding-left: 2rem;
-    margin-bottom: 1rem;
-  }
+    .about p {
+        line-height: 2rem;
+    }
 
-  .skills h3 {
-    width: 30%;
-    padding-right: 4rem;
-    padding-top: 1rem;
-  }
-  .info p span {
-    font-size: 1.75rem;
-  }
+    .skills p {
+        word-spacing: 1.75rem;
+        line-height: 3.2rem;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+    }
 
-  .projects {
-    padding-top: 5rem;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+    .skills h3 {
+        width: 30%;
+        padding-right: 4rem;
+        padding-top: 1rem;
+    }
 
-  .subsection_container {
-    margin: 1rem 0;
-    width: 600px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: unset;
-  }
+    .info p span {
+        font-size: 1.75rem;
+    }
 
-  .projects a {
-    padding: 6rem 9rem;
-    justify-content: space-around;
-  }
+    .projects {
+        padding-top: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
-  .subsection_container h5 {
-    font-size: 1.5rem;
-    font-family: NeueMontrealBold;
-  }
+    .subsection_container {
+        margin: 1rem 0;
+        width: 600px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: unset;
+    }
 
-  p.project_description {
-    font-size: 1rem;
-    font-family: NeueMontrealBook;
-    padding-left: 1rem;
-  }
+    .projects a {
+        padding: 6rem 9rem;
+        justify-content: space-around;
+    }
 
-  .page_2_links a {
-    font-size: 1rem;
-    padding: 5px 15px;
-    text-align: center;
-    max-width: 150px;
-    min-width: 149px;
-  }
+    .subsection_container h5 {
+        font-size: 1.5rem;
+        font-family: NeueMontrealBold;
+    }
 
+    p.project_description {
+        font-size: 1rem;
+        font-family: NeueMontrealBook;
+        padding-left: 1rem;
+    }
 
-  .page_3_links {
-    background-color: rgba(255, 255, 255, 0.78);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    /*width: unset;*/
-    justify-content: space-between;
-  }
-  .page_3_links a {
-    font-size: 1rem;
-    padding: 5px 15px;
-    text-align: center;
-    max-width: 150px;
-    min-width: 149px;
-    background-color: rgba(255, 255, 255, 0.43);
-  }
+    .page_2_links a {
+        font-size: 1rem;
+        padding: 5px 15px;
+        text-align: center;
+        max-width: 150px;
+        min-width: 149px;
+    }
+
+    .page_3_links {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .page_3_links a {
+        font-size: 1rem;
+        padding: 5px 15px;
+        text-align: center;
+        max-width: 150px;
+        min-width: 149px;
+        background-color: rgba(255, 255, 255, 0.43);
+    }
+
 }
-
