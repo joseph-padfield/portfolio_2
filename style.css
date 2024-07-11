@@ -195,7 +195,7 @@ p {
   margin-top: 10px;
   border-top: black solid 5px;
   border-bottom: black solid 5px;
-  height: 100vh;
+  /*height: 100vh;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
