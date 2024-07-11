@@ -199,7 +199,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20% 10%;
+  padding: 0 10%;
+  min-height: 620px;
 }
 
 .info div {
