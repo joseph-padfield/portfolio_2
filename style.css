@@ -34,6 +34,9 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -139,6 +142,7 @@ h2 {
   width: 100%;
   text-align: left;
   font-size: 1.2rem;
+  line-height: 3rem;
 }
 
 h3 {
@@ -146,6 +150,7 @@ h3 {
   font-size: 1.3rem;
   width: 100%;
   text-align: left;
+  line-height: 3rem;
 }
 
 h4 {
@@ -242,8 +247,13 @@ p {
 .skills p {
   text-align: left;
   font-size: 0.8rem;
+  line-height: 1.5rem;
+  word-spacing: 3px;
 }
 
+span {
+  font-family: NeueMontrealBold; font-size: 1rem;
+}
 .page_2_links {
   display: flex;
   justify-content: center;
@@ -338,7 +348,7 @@ p.project_description {
   top: 0;
   background-color: rgba(255, 255, 255, 0.83);
   width: 100vw;
-  padding: 2rem 10% 0 10%;
+  padding: 1rem 10% 8px 10%;
   gap: 1rem;
 }
 
@@ -353,7 +363,7 @@ p.project_description {
   background-color: rgba(255, 255, 255, 0.83);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
 
   .info {
     padding: 0 10%;
@@ -462,6 +472,31 @@ p.project_description {
     /*padding: 3px;*/
   }
 
+  .about h3 {
+    padding-left: 4rem;
+    padding-top: 1rem;
+  }
+
+  .about p {
+    line-height: 2rem;
+  }
+
+  .skills p {
+    word-spacing: 1.75rem;
+    line-height: 3.2rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills h3 {
+    width: 30%;
+    padding-right: 4rem;
+    padding-top: 1rem;
+  }
+  .info p span {
+    font-size: 1.75rem;
+  }
+
   .projects {
     padding-top: 5rem;
     flex-direction: row;
@@ -470,6 +505,7 @@ p.project_description {
   }
 
   .subsection_container {
+    margin: 1rem 0;
     width: 600px;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -517,3 +553,4 @@ p.project_description {
     background-color: rgba(255, 255, 255, 0.43);
   }
 }
+
