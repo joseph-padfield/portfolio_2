@@ -1,5 +1,19 @@
+/*General comments:*/
+/*- very good overall, great use of correct units like % and rem*/
+/*- good use of selecting nested tags rather than adding classes*/
+/*- just needs a tidy up by removing extra blank lines and*/
+/*  making sure there's one empty line between each CSS block*/
+/*- also remember to delete commented-out code before code review:*/
+/*  even though it could be useful information, you can still see the comments*/
+/*  in previous commits if you want to go back to them*/
+
 * {
   box-sizing: border-box;
+  /*Usual practice is to put font-family in the body styling,*/
+  /*and only use * for very special cases*/
+  /*also, it's usually a good idea to add a backup font in case*/
+  /*the user can't load yours for whatever reason, so in this*/
+  /*case it would be sans-serif*/
   font-family: "Fira Sans";
   line-height: 1;
 
@@ -28,6 +42,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*Remove this commented-out line if you no longer need it*/
   /*margin-bottom: 5%;*/
   border-bottom: grey solid 1px;
 }
@@ -38,6 +53,7 @@ a {
   justify-content: space-around;
   font-weight: 700;
   border: solid 1px black;
+  /*This commented line can also be removed*/
   /*border-radius: 5px;*/
   padding: 5px;
   text-decoration: none;
@@ -155,6 +171,7 @@ p {
 
 .about {
   display: flex;
+  /*Another line to delete*/
   /*height: 50%;*/
   padding: 5% 5% 10% 5%;
 
@@ -172,6 +189,7 @@ p {
 
 .skills {
   display: flex;
+  /*Another line to delete*/
   /*height: 50%;*/
   padding: 5% 5% 10% 5%;
 }
@@ -208,6 +226,7 @@ p {
 }
 
 
+/*You can remove both of these*/
 .left {
  /*margin-right: 40%;*/
 }
@@ -342,6 +361,7 @@ p {
   a:hover {
     background-color: black;
     color: white;
+    /*Another one to remove*/
     /*padding: 3px;*/
   }
 
