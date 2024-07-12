@@ -195,6 +195,7 @@ p {
     justify-content: center;
     padding: 0 10%;
     min-height: 100vh;
+    position: relative;
 }
 
 .info div {
@@ -241,20 +242,6 @@ span {
     font-size: 1rem;
 }
 
-.page_2_links {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.page_2_links a {
-    font-size: 0.7rem;
-    width: 30%;
-    padding: 5px 15px;
-    text-align: center;
-    min-width: 95px;
-}
-
 .projects {
     width: 100%;
     margin: 1px;
@@ -263,6 +250,7 @@ span {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    position: relative;
 }
 
 .projects a {
@@ -324,27 +312,42 @@ p.project_description {
     font-size: 0.8rem;
 }
 
-.page_3_links {
+.page_2_links {
+    width: 80vw;
     display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.83);
-    width: 100vw;
-    padding: 1rem 10% 8px 10%;
-    gap: 1rem;
-    z-index: 1;
+    justify-content: space-between;
+    border: none;
+    top: 1rem;
+    position: absolute;
 }
 
-.page_3_links a {
-    font-size: 0.7rem;
-    width: 30%;
-    padding: 5px 15px;
-    text-align: center;
-    border: solid 2px black;
-    margin: unset;
-    min-width: 95px;
-    background-color: rgba(255, 255, 255, 0.83);
+.page_2_links a {
+    border: none;
+    font-family: NeueMontrealThin;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.page_3_links {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    top: 1rem;
+    position: sticky;
+    font-family: NeueMontrealThin;
+    font-size: smaller;
+}
+
+#project_nav_bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.51);
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    font-family: NeueMontrealThin;
 }
 
 .subsection_container div .click_prompt_for_mobile {
@@ -521,14 +524,6 @@ p.project_description {
         padding-left: 1rem;
     }
 
-    .page_2_links a {
-        font-size: 1rem;
-        padding: 5px 15px;
-        text-align: center;
-        max-width: 150px;
-        min-width: 149px;
-    }
-
     .page_3_links {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -552,4 +547,19 @@ p.project_description {
     .subsection_container a:hover {
         filter: blur(3.5px);
     }
+
+    #project_nav_bar a {
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.51);
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        font-size: 0.8rem;
+        border-radius: 8px;
+    }
+
+    #project_nav_bar a:hover {
+        background-color: black;
+        color: white;
+    }
+
 }
