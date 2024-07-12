@@ -192,9 +192,9 @@ p {
     border-bottom: black solid 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10%;
-    min-height: 620px;
+    min-height: 100vh;
 }
 
 .info div {
@@ -333,6 +333,7 @@ p.project_description {
     width: 100vw;
     padding: 1rem 10% 8px 10%;
     gap: 1rem;
+    z-index: 1;
 }
 
 .page_3_links a {
@@ -344,6 +345,14 @@ p.project_description {
     margin: unset;
     min-width: 95px;
     background-color: rgba(255, 255, 255, 0.83);
+}
+
+.subsection_container div .click_prompt_for_mobile {
+    word-spacing: unset;
+    letter-spacing: unset;
+    font-size: smaller;
+    line-height: 0.8rem;
+    font-family: NeueMontrealThin;
 }
 
 @media (min-width: 850px) {
@@ -521,7 +530,6 @@ p.project_description {
     }
 
     .page_3_links {
-        background-color: rgba(255, 255, 255, 0.78);
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         justify-content: space-between;
@@ -536,4 +544,12 @@ p.project_description {
         background-color: rgba(255, 255, 255, 0.43);
     }
 
+    a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .subsection_container a:hover {
+        filter: blur(3.5px);
+    }
 }
