@@ -28,7 +28,7 @@
 
 * {
     box-sizing: border-box;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     letter-spacing: 2px;
 }
 
@@ -160,7 +160,6 @@ img {
 p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 16px;
 }
 
 .links {
@@ -265,6 +264,14 @@ span {
     margin: 0.5rem;
 }
 
+.project_description .span {
+    line-height: unset;
+}
+
+.posts_and_rails_app {
+    background-image: url("posts_and_rails.png");
+    background-size: cover;
+}
 .movie_app {
     background-image: url("movie_app.png");
 }
@@ -304,6 +311,7 @@ span {
 
 .subsection_container h5 {
     width: 90%;
+    line-height: 2rem;
     font-size: 1.2rem;
     font-family: NeueMontrealMedium;
 }
